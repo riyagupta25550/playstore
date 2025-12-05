@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.menu{
+			
+			display: flex;                            
+			height: 65px;
+			width: 100%;
+			/*padding: 10px;*/
+			position: fixed;
+			box-shadow: 2px 2px 6px 0.3px grey;
+			z-index: 1;
+			background-color: white;
+		}
+		div{
+			padding: 11px;
+		}
+		.logo img{
+			height: 45px;
+			width: 150px;
+			position: relative;
+			top: -14px;
+			left: 14px;
+		}
+		.space{
+			empty-cells: 20px;
+		}
+
+	 	li{
+			display: inline;
+			margin: 4px;
+		}
+		.libox{
+			display: inline;
+			border-top-color: green;
+
+		}
+		li a{
+			color: black;
+			text-decoration: none;
+			font-family: arial ;
+			color: #686868;
+			font-size: 14px;
+		}
+		.space2{
+			width: 680px;
+
+		}
+		ion-icon{
+			height: 27px;
+			width: 27px;
+		}
+		.icons {
+			position: relative;
+			top: -3px;
+			/*height: 34px;
+			width: 34px;*/
+
+		}
+		.box{
+			height: 100vh;
+			width: 100%;
+			/*border: 2px solid black;*/	
+		}
+
+		/*button*/
+		.buttons{
+			margin-left:50px ;
+		}
+		button{
+			display: inline-flex;
+
+			align-items: center;
+			justify-content: center;
+			margin: 10px;
+			margin-top: 80px;
+			height: 30px;
+			border-radius: 45px;
+			border: 0.1px solid #686868;
+			width: 120px;
+			background-color: #fff;
+			
+			/*padding-right: 5px;*/
+		}
+		button:hover{
+			background-color: lightgrey;
+		}
+		button a{
+			display: inline-flex;
+			align-items: center;
+			text-decoration: none;
+			color: #0C090A;
+			height: 15px;
+		
+
+		}
+		button ion-icon{
+			
+			height: 15px;
+		}
+		.text{
+			justify-content: center;
+		}
+
+
+		/*container*/
+		
+		.container{
+			margin: 50px;
+			padding-top: 1px;
+		}
+		.container h2{
+			font-family: arial;
+		}
+
+		.container p{
+			font-family: arial;
+			font-size: 13px;
+			color:#686868 ;
+		}
+ 
+
+ 		/*app*/
+
+ 		.apps{
+ 			/*margin: 50px;*/
+ 			display: flex;
+ 		}
+ 		.slider{
+ 			width: 400px;
+ 			height: 330px;
+ 			/*border: 2px solid black;*/
+
+ 		}
+ 		
+ 		.apps .slider{
+ 			margin: 15px;
+ 		}
+ 		.slide{
+ 			display: inline-flex;
+ 			padding-left: 0;
+ 			/*padding-top: 30px;*/
+ 		}
+ 		.slide img{
+ 			margin-top: 25px;
+ 			margin-left: 0;
+ 			border-radius: 5px;
+ 		}
+ 		.slide .text{
+ 			margin-top: 25px;
+ 			margin-left: 0;
+ 		}
+ 		.video{
+ 			height: 200px;
+ 			width: 370px;
+ 			/*border: 2px solid black;*/
+ 			border-radius: px;
+ 			overflow: hide;
+ 			padding-left: 0;
+ 			/*margin: 20px;*/
+ 		}
+ 		.video video{
+ 			height: 220px;
+ 			width: 390px;
+ 			border-radius: 7px;
+ 			
+ 		}
+ 		h2{
+ 			color: black;
+ 		}
+	</style>
+<body>
+	<div class="menu">
+		<div class="logo"><img src="img1.jpeg"></div>
+		<div class="space"></div>
+		<div>
+		 
+		 	<ul>
+				<li><div class="libox"><a href="https://play.google.com/store/games"><b>Games</b></a></div></li>
+				<li><div class="libox"><a href="https://play.google.com/store/apps"><b>Apps</b></a></div></li>
+				<li><div class="libox"><a href="https://play.google.com/store/books"><b>Books</b></a></div></li>
+				<li><div class="libox"><a href="https://play.google.com/store/apps/category/FAMILY"><b>Kids</b></a></div></li>
+			</ul>
+		</div>
+		<div class="space2"></div>
+		<div class="icons">
+			<ion-icon name="search-outline"></ion-icon>&emsp;
+			<ion-icon name="help-circle-outline"></ion-icon>&emsp;	
+			<ion-icon name="person-circle" ></ion-icon>
+		</div>
+	</div>
+	
+
+		<!-- buttons -->
+<div class="buttons">
+		<button><a href="play_store.html"><ion-icon name="tv-outline"></ion-icon><b>Windows</b></a></button>
+		<button><a href="#"><ion-icon name="phone-portrait"></ion-icon><b>Phone</b></a></button>
+		<button><a href="#"><ion-icon name="tablet-portrait"></ion-icon><b>Tablet</b></a></button>
+		<button><a href="#"><ion-icon name="tv-outline"></ion-icon><b>T.v</b></a></button>
+		<button><a href="#"><ion-icon name="tv"></ion-icon><b>Chromebook</b></a></button>
+		<button><a href="#"><ion-icon name="watch-outline"><b></ion-icon>Watch</b></a></button>
+		<button><a href="#"><ion-icon name="unlink-outline"></ion-icon><b>XR Headset</b></a></button>
+</div>
+<div class="container">
+	<a href="#"><img src="img2.jpg" height="350px" width="1250px"></a>
+	<br><br><br>
+	<h2>Experience our top picks on PC</h2>
+	<p>Download "Google Play Games" and get started</p>
+
+	<div class="apps">
+		
+		<div class="slider"><a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax">
+			<div class="video"><video controls><source src="vid1.mp4"></video></div>
+			<div class="slide">
+				<div><img src="freefire.jpg" height="70px" width="70px"></div>
+				<div class="text">
+					<h2>Free Fire Max</h2>
+					<p>Action - Tactical shooter</p>
+					<p>4.3*</p>
+				</div>
+			</div></a>
+		</div>
+
+		<div class="slider"><a href="https://play.google.com/store/apps/details?id=com.snapchat.android">
+			<div class="video"><video controls><source src="vid3.mp4"></video></div>
+			<div class="slide">
+				<div><img src="snapchat.jpg" height="70px" width="70px"></div>
+				<div class="text">
+					<h2>Snapchat</h2>
+					<p>Snap Inc</p>
+					<p>4.3*</p>
+				</div>
+			</div></a>
+		</div>
+
+		<div class="slider"><a href="https://play.google.com/store/apps/details?id=com.ludo.king">
+			<div class="video"><video controls><source src="vid2.mp4"></video></div>
+			<div class="slide">
+				<div><img src="ludoking.jpg" height="70px" width="70px"></div>
+				<div class="text">
+					<h2>Ludo King</h2>
+					<p>Gametion</p>
+					<p>3.8*</p>
+				</div>
+			</div></a>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
